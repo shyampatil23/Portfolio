@@ -56,7 +56,7 @@
         
         <div class="row mt-4">
             <div class="imageSection col-md-5">
-                <img src="/image/file.png" alt="img" style="width: 25em; height: 25em;">
+                <img src="./image/file.png" alt="img" style="width: 25em; height: 25em;">
             </div>
             <div class="col-md-6">
                 <div class="information">
@@ -133,7 +133,7 @@
     <script>
         function downloadCV() {
             const link = document.createElement('a');
-            link.href = '/pdf/shamresume.pdf'; // Replace with the path to your CV file
+            link.href = './pdf/shamresume.pdf'; // Replace with the path to your CV file
             link.download = 'Sham_Patil_CV.pdf'; // Set the desired file name
             document.body.appendChild(link);
             link.click();
