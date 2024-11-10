@@ -390,6 +390,70 @@ section .personalInfo div span{
   font-size: 17px;
 }
 
+
+/* Media Query for Mobile Devices (Small Screens) */
+@media only screen and (max-width: 767px) {
+  /* Adjust Personal Information Section */
+  .personalInfo {
+      display: flex;
+      flex-direction: column;
+      padding: 10px;
+  }
+
+  .personalInfo div {
+      display: flex;
+      justify-content: space-between;
+      font-size: 12px;
+      padding: 5px 0;
+  }
+
+  /* Button adjustments */
+  .button {
+      text-align: center;
+      margin-top: 10px;
+  }
+
+  /* Adjust Skill Section for Small Screens */
+  .skillSection {
+      padding: 10px;
+    
+     
+  }
+
+  .subject {
+      font-size: 14px;
+  }
+
+  .progress_bar {
+      height: 15px;
+  }
+  
+  .skill {
+      margin-bottom: 10px;
+  }
+}
+
+/* Media Query for Extra Small Screens (Stack Skills Vertically) */
+@media only screen and (max-width: 480px) {
+  .skillSection {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .skill {
+      width: 100%;
+      margin-bottom: 15px;
+      text-align: center;
+  }
+
+  .progress_bar {
+      width: 90%;
+      
+  }
+}
+
+
 /* Education Section */
 
 .col .title{
@@ -814,6 +878,21 @@ body, html {
   opacity: 0;
   animation:show-content 1.5s linear forwards;
   animation-delay: 1.6s;
+}
+
+/* Default Styling for Larger Screens */
+#projects .col-md-4 {
+  display: flex;
+  justify-content: center;
+}
+
+/* Media Query for Small Screens (Mobile Devices) */
+@media only screen and (max-width: 767px) {
+  #projects .col-md-4 {
+      flex: 0 0 100%; /* Make each column take up full width */
+      max-width: 100%; /* Full width on small screens */
+      margin-bottom: 20px; /* Add spacing between cards */
+  }
 }
 
 
@@ -1534,3 +1613,141 @@ body, html {
   animation-delay: 1.6s;
 }
 
+/* Default Styling for Larger Screens */
+.contact1 {
+  padding: 30px 0;
+}
+
+.contact1 .content {
+  text-align: center;
+  margin-bottom:auto;
+}
+
+.contact1 h2 {
+  font-size: 2em;
+}
+
+.contact1 p {
+  font-size: 1.2em;
+}
+
+.contact1 .container2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.contactInfo {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+}
+
+.contactInfo .box {
+  display: flex;
+  align-items: center;
+  margin-right: 30px;
+}
+
+.contactInfo .box .icon {
+  margin-right: 10px;
+}
+
+.contactForm {
+  width: 35%;
+}
+
+.contactForm h2 {
+  text-align: center;
+}
+
+.inputBox {
+  margin-bottom: 20px;
+}
+
+.inputBox input,
+.inputBox textarea {
+  width: 100%;
+}
+
+/* Media Query for Small Screens (Mobile Devices) */
+@media only screen and (max-width: 767px) {
+  .contact1 .content h2 {
+      font-size: 1.5em; /* Smaller heading size */
+      
+  }
+
+  .contact1 .content p {
+      font-size: 1em; /* Smaller paragraph text */
+      margin-left: auto;
+      margin-right: auto;
+      width: 90%;
+  }
+
+  .contact1 .container2 {
+      flex-direction: column; /* Stack elements vertically */
+      align-items: center;
+      padding: 20px;
+  }
+
+  /* Contact Info Section */
+  .contactInfo {
+      display: flex;
+      flex-direction: column; /* Stack contact info vertically */
+      align-items: center;
+      width: 100%;
+      margin-bottom: 30px;
+     
+  }
+
+  .contactInfo .box {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 20px; /* Space between boxes */
+  }
+
+  .contactInfo .box .icon {
+      font-size: 24px; /* Make icons smaller */
+      margin-right: 10px;
+  }
+
+  .contactInfo .box h3 {
+      font-size: 1.1em; /* Slightly smaller text for headings */
+  }
+
+  /* Contact Form Section */
+  .contactForm {
+      width: 100%;
+      max-width: 100%;
+      padding: 0 20px;
+  }
+
+  .contactForm h2 {
+      font-size: 1.2em; /* Smaller heading size */
+  }
+
+  .inputBox input,
+  .inputBox textarea {
+      padding: 10px;
+      font-size: 1em; /* Ensure input text size fits mobile screens */
+  }
+
+  .inputBox input[type="Submit"] {
+      padding: 12px 20px;
+      font-size: 1.1em; /* Adjust button size for mobile */
+  }
+}
+
+@media only screen and (min-width: 1024px){
+
+  .container2 .contactInfo{
+    margin-left: 15em;
+    
+  }
+
+  .contactForm{
+    width: 60%;
+    margin-right: 15em;
+    margin-bottom: 4em;
+  }
+}
