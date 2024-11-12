@@ -219,6 +219,33 @@ nav ul{
 }
 
 
+        /* Custom CSS for social icons */
+        .social-icons {
+          display: flex;
+          justify-content: start;
+          gap: 1rem;
+          margin-top: 1rem;
+          
+      }
+
+      .social-icons a {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 43px;
+          height: 43px;
+          border-radius: 50%;
+          font-size: 2.5rem;
+          text-decoration: none;
+          transition: background-color 0.3s ease, color 0.3s ease;
+      }
+
+  /* Hover effect */
+  .social-icons a:hover {
+      background-color: #d2d2d2;
+  }
+
+
 /* Img */
 /* 
 .imageSection{
@@ -1751,3 +1778,4 @@ body, html {
     margin-bottom: 4em;
   }
 }
+
