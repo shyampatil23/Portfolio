@@ -1510,14 +1510,14 @@ body, html {
 }
 
 .container2 .contactInfo .box .icon{
-  min-width: 60px;
-  height: 60px;
+  min-width: 30px;
+  height: 30px;
   background: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  font-size: 22px;
+  font-size: 23px;
 }
 
 .container2 .contactInfo .box .text{
