@@ -93,22 +93,27 @@
                 </div>
             </div>
             <div class="contactForm">
-                <form action="submit_form.php" method="POST" class="contact-form">
+                <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
                     <h2>Send Message</h2>
                     <div class="inputBox">
-                        <input type="text" name="" required="required">
+                        <!-- Replace with your Access Key -->
+                      <input type="hidden" name="access_key" value="21088595-79f7-44ca-9716-c5353643ba38">
+                        <input type="text" name="name" required="required">
                         <span>Full Name</span>
                         </div>
                         <div class="inputBox">
-                            <input type="text" name="" required="required">
+                            <input type="text" name="email" required="required">
                             <span>Email</span>
                             </div>
                             <div class="inputBox">
                                <textarea required="required"></textarea>
                                 <span>Type your Message...</span>
                                 </div>
+                            
                                 <div class="inputBox">
-                                    <input type="Submit" name="" value="send">
+                                    <!-- Honeypot Spam Protection -->
+                                <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                                    <input type="Submit" name="submit" value="send">
                                 </div>
                 </form>
             </div>
