@@ -1805,7 +1805,7 @@ body, html {
 
 /* For small screen devices (max-width: 750px) */
 /* For small screen devices (max-width: 750px) */
-@media screen and (min-width: 400px) and (max-width: 750px) {
+@media screen and (min-width: 100px) and (max-width: 1500px) {
 
   .skilled{
     margin-bottom: auto;
@@ -1903,13 +1903,4 @@ body, html {
   }
 }
 
-@media screen and (min-width: 100px) and (max-width: 2392px) {
-  .skilled{
-    margin-bottom: auto;
-  }
-}
-@media screen and (min-width: 300px) and (max-width: 650px) {
-  .skilled{
-    margin-bottom: auto;
-  }
-}
+
