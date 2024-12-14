@@ -1844,13 +1844,13 @@ body, html {
     width: 100%;
     text-align: center;
     margin-bottom: 15px; /* Reduce space between contact boxes */
-    margin-left: 10em;
+  
   }
 
   .contact3 .contactInfo1 .box .icon {
     font-size: 30px; /* Adjust icon size for smaller screens */
     margin-bottom: 10px;
-    margin-left: 10em;
+    
   }
 
   .contact3 .contactInfo1 .box h3 {
@@ -1903,3 +1903,13 @@ body, html {
   }
 }
 
+@media screen and (min-width: 100px) and (max-width: 2392px) {
+  .skilled{
+    margin-bottom: auto;
+  }
+}
+@media screen and (min-width: 300px) and (max-width: 650px) {
+  .skilled{
+    margin-bottom: auto;
+  }
+}
