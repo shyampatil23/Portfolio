@@ -1778,4 +1778,128 @@ body, html {
     margin-bottom: 4em;
   }
 }
+/* Skills Section (Assumed Name: .skills-section) */
+.skilled{
+  margin-bottom: 28em; /* Ensure space below the Skills section */
+}
+
+/* Contact Section */
+.contact3 {
+  padding: 30px 0;
+  margin-top: 40px; /* Add space above the Contact section */
+  clear: both; /* Prevent overlap with previous sections */
+}
+
+.contact3 .content {
+  text-align: center;
+  margin-bottom: 20px; /* Add space below the content */
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.contact3 .contactForm2 {
+  margin-right: 2em;
+  margin-left: 2em;
+  width: 100%; /* Adjust width to make it responsive */
+}
+
+/* For small screen devices (max-width: 750px) */
+/* For small screen devices (max-width: 750px) */
+@media screen and (min-width: 400px) and (max-width: 750px) {
+
+  .skilled{
+    margin-bottom: auto;
+  }
+
+  .contact3 {
+    padding: 20px 10px; /* Reduce padding for smaller screens */
+    margin-top: 20px; /* Adjust top margin */
+  }
+
+  .contact3 .content {
+    text-align: center;
+    margin-bottom: 20px; /* Space below the content */
+    margin-left: 10px; /* Reduce margin to prevent overflow */
+    margin-right: 10px; /* Reduce margin to prevent overflow */
+  }
+
+  .contact3 .container2 {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center;
+    width: 100%;
+  }
+
+  /* Contact Info Section */
+  .contact3 .contactInfo1 {
+    display: flex;
+    flex-direction: column; /* Stack the contact info items */
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px; /* Reduce space between contact info and form */
+   
+  }
+
+  .contact3 .contactInfo1 .box {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 15px; /* Reduce space between contact boxes */
+    margin-left: 10em;
+  }
+
+  .contact3 .contactInfo1 .box .icon {
+    font-size: 30px; /* Adjust icon size for smaller screens */
+    margin-bottom: 10px;
+    margin-left: 10em;
+  }
+
+  .contact3 .contactInfo1 .box h3 {
+    font-size: 1.2em; /* Adjust heading size */
+    margin-bottom: 5px;
+  }
+
+  .contact3 .contactInfo1 .box p {
+    font-size: 1em; /* Adjust paragraph text size */
+    margin: 0;
+  }
+
+  /* Contact Form Section */
+  .contactForm2 {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .contactForm2 h2 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+
+  .inputBox {
+    width: 100%; /* Ensure inputs take full width */
+    margin-bottom: 15px;
+  }
+
+  .inputBox input,
+  .inputBox textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    margin-bottom: 10px; /* Add space between fields */
+  }
+
+  .inputBox input[type="submit"] {
+    width: 100%; /* Make the button take full width */
+    padding: 12px;
+    font-size: 1.1em;
+    background-color: #00bcd4; /* Adjust background color */
+    border: none;
+    color: white;
+    cursor: pointer;
+    margin-top: 10px; /* Add space above the submit button */
+  }
+
+  .inputBox input[type="submit"]:hover {
+    background-color: #00bcd4; /* Hover effect for button */
+  }
+}
 
